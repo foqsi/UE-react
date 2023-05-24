@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,120 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+body {
+  align-items: center;
+  background-image: repeating-radial-gradient(#ffffff, #736c43);
+  color: #bdad21;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  min-width: 768px;
+}
+
+header,
+nav,
+main,
+footer {
+  display: block;
+}
+
+header {
+  justify-content: center;
+  background-color: #ffffff;
+  float: left;
+  width: 50%;
+}
+
+#header-text {
+  font-weight: bold;
+  text-shadow: #000000 1px 1px 1px;
+}
+
+#logo {
+  float: left;
+  margin-left: 40px;
+}
+
+nav {
+  background-color: #ffffff;
+  width: 50%;
+  float: right;
+  padding-bottom: 4px;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+}
+
+main {
+  text-align: center;
+}
+
+main p {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+h4 {
+  color: #e1cf2a;
+  font-size: 2em;
+  text-shadow: #000000 1px 1px 1px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+h3 {
+  color: #e1cf2a;
+  font-size: 3em;
+  text-shadow: #000000 1px 1px 1px;
+  margin-top: 0;
+  gap: 10px;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1em;
+}
+
+.font_8 {
+  gap: 100px;
+}
+
+a {
+  color: #a4971d;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+    height: 100%;
+    padding-left: 0.3em;
+  }
+}
+
+@media print {
+  body {
+    background-image: none;
+  }
 }
